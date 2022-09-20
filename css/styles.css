@@ -369,27 +369,21 @@ width: 44px;
 height: 44px;
 border-radius: 50%;
 fill: var(--icon-color-main);
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socialnet-link {
+  fill: var(--icon-color-main);
+}
+
+.socialnet-link {
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socialnet-link:hover,
 .socialnet-link:focus {
   background-color: var(--accent-color);
-}
-
-.socialnet-link.socialnet-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.socialnet-link.socialnet-icon {
-  fill: var(--icon-color-main);
-}
-
-.socialnet-link:hover .socialnet-icon,
-.socialnet-link:focus .socialnet-icon {
-  background-color: var(--accent-color);
   fill: var(--icon-white);
-}
+} 
 
 
 
@@ -550,6 +544,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(0);
 }
 
+.examples-link:focus .overlay-desc {
+  outline: none;
+  transform: translateY(0);
+}
+
 .overlay-desc {
   position:absolute;
   background: var(--accent-color);
@@ -680,13 +679,6 @@ border-radius: 50%;
 .socialnet-link.socialnet-icon {
   fill: var(--icon-color-main)
 }
-
-.socialnet-link:hover .socialnet-icon,
-.socialnet-link:focus .socialnet-icon {
-  background-color: var(--accent-color);
-  fill: var(--icon-white);
-}
-
 
 /* BACKDROP */
 
